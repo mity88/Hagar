@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+
+ #main-navigation {
+	width:auto;
+	height:40px;
+	list-style:none;
+	
+}
+
+
+/* Main Site Navigation */
+#main-navigation li {
+	float:left;
+	position:relative;
+}
+
+#main-navigation li.spacer {
+	width:1px;
+	height:40px;
+	display:block;
+	overflow:hidden;
+	background:url(images/black-spliter.jpg) top left no-repeat;
+}
+
+#main-navigation li a {
+	color:#FFFFFF;
+	font-size:12px;
+	line-height:16px;
+	height:16px;
+	padding:9px 11px 15px 11px;
+	text-transform:uppercase;
+	text-decoration:none;
+	background:url(images/main-nav-background.jpg) top left repeat-x;
+	display:block;
+	float:left;
+}
+
+#main-navigation li a:hover, #main-navigation li a.selected, #main-navigation li:hover a {
+	text-decoration:none;
+	color:#808080;
+	background-position:bottom left;
+}
+
+
+#main-navigation li:hover .primary-dropdown {
+	display:block;
+}
+
+/* Primary Dropdown Styling */
+#main-navigation .primary-dropdown {
+	display:none;
+	left:0;
+	padding:1px 0px 0px 0px;
+	position:absolute;
+	top:40px;
+	width:180%;
+	height: auto;
+	z-index:1000000 !important;
+	background:#666666;
+}
+
+#main-navigation .primary-dropdown li {
+	height:28px;
+	width:100%;
+	display:block;
+	position: relative;
+}
+
+#main-navigation .primary-dropdown li.divider {
+	height:1px;
+	overflow:hidden;
+	width:100%;
+	display:block;
+	background:#4d4d4d;
+}
+
+#main-navigation .primary-dropdown li a {
+	color:#e6e6e6 !important;
+	padding:0px;
+	font-size:12px;
+	line-height:16px;
+	padding:6px 0px 6px 0px;
+	width:100% !important;
+	text-indent:11px;
+	display:block;
+	background: url(images/primary-dropdown-a-background.png) -200px 0px no-repeat;
+	text-transform:none;	
+}
+
+#main-navigation .primary-dropdown li a:hover, #main-navigation .primary-dropdown li:hover a {
+	color:#FFFFFF;
+	background-position:-200px -28px;
+}
+
+#main-navigation li:hover a span.genset { color:#00da00; }
+#main-navigation li:hover a span.ats { color:#2999e8; }
+#main-navigation li:hover a span.power { color:#ee0000; }
+#main-navigation li:hover a span.light { color:#ffcc00; }
+#main-navigation li:hover a span.cts { color:#C0F; }
+
+
+.primary-dropdown li.first a {
+	background-position:0px 0px;
+	padding:6px 0px 6px 0px;
+}
+
+#main-navigation .primary-dropdown li.first a:hover,  #main-navigation .primary-dropdown li.first:hover a{
+	background-position:0px -28px;
+}
+
+#main-navigation .primary-dropdown li.last a {
+	background-position:-400px 0px;
+}
+
+#main-navigation .primary-dropdown li.last:hover a {
+	background-position:-400px -28px;
+}
+
+
+/* Secondary Dropdown Styling */
+#main-navigation .secondary-dropdown {
+	position:absolute;
+	left:100%;
+	width:170px;
+	text-transform:none !important;
+	display:none;
+}
+
+#main-navigation .tertiary-dropdown {
+	position:absolute;
+	left:100%;
+	width:170px;
+	text-transform:none !important;
+	display:none;
+}
+
+#main-navigation #dropdown-genset.secondary-dropdown { top:0px; }
+#main-navigation #dropdown-ats.secondary-dropdown { top:0px; }
+#main-navigation #dropdown-power.secondary-dropdown { top:0px; }
+#main-navigation #dropdown-light.secondary-dropdown { top:0px; }
+
+#main-navigation .primary-dropdown li:hover .secondary-dropdown {
+	display:block;
+}
+
+#main-navigation .primary-dropdown li:hover .secondary-dropdown li:hover .tertiary-dropdown {
+	display:block;
+}
+
+#main-navigation .secondary-dropdown li.divider {
+	background: url(images/secondary-dropdown-background.png) 0px -28px no-repeat;
+}
+
+#main-navigation .secondary-dropdown li.divider span{
+	background: #4d4d4d;
+	display:block;
+	height:1px;
+	width:160px;
+	margin:0px auto;
+	overflow:hidden;
+}
+
+
+#main-navigation .primary-dropdown li .secondary-dropdown li a {
+	text-transform:none;
+	background-image: url(images/secondary-dropdown-background.png);
+	background-repeat:no-repeat;
+	text-indent:14px;
+	overflow:hidden;
+}
+
+#main-navigation .primary-dropdown li .secondary-dropdown li a,
+#main-navigation .primary-dropdown li.last .secondary-dropdown li a { background-position: 0px -28px; }
+#main-navigation .primary-dropdown li .secondary-dropdown li a:hover { background-position: -170px -28px; }
+/*#main-navigation .primary-dropdown li .secondary-dropdown li.first a { background-position: 0px -112px; }
+#main-navigation .primary-dropdown li .secondary-dropdown li.first a:hover { background-position: -170px -112px; }*/
+
+/*#main-navigation .primary-dropdown li .secondary-dropdown li.first a { background-position: 0px 0px; }
+#main-navigation .primary-dropdown li .secondary-dropdown li.first a:hover { background-position: -170px 0px; }*/
+
+/*#main-navigation .primary-dropdown li .secondary-dropdown li.first.equal a { background-position: 0px -84px; }
+#main-navigation .primary-dropdown li .secondary-dropdown li.first.equal a:hover { background-position: -170px -84px; }*/
+
+#main-navigation .primary-dropdown li .secondary-dropdown li.first a { background-position: 0px -84px; }
+#main-navigation .primary-dropdown li .secondary-dropdown li.first a:hover { background-position: -170px -84px; }
+
+#main-navigation .primary-dropdown li .secondary-dropdown li.first.equal a { background-position: 0px -84px; }
+#main-navigation .primary-dropdown li .secondary-dropdown li.first.equal a:hover { background-position: -170px -84px; }
+
+#main-navigation .primary-dropdown li .secondary-dropdown li.last a, 
+#main-navigation .primary-dropdown li .secondary-dropdown li.last a { background-position: 0px -56px; }
+#main-navigation .primary-dropdown li .secondary-dropdown li.last a:hover { background-position: -170px -56px; }
+#main-navigation .primary-dropdown li .secondary-dropdown li.last.equal a { background-position: 0px -140px; }
+#main-navigation .primary-dropdown li .secondary-dropdown li.last.equal a:hover { background-position: -170px -140px; }
+
+
+#main-navigation .primary-dropdown #dropdown-genset.secondary-dropdown li a:hover { color:#00da00 !important; }
+#main-navigation .primary-dropdown #dropdown-ats.secondary-dropdown li a:hover { color:#2999e8 !important; }
+#main-navigation .primary-dropdown #dropdown-power.secondary-dropdown li a:hover { color:#ee0000 !important;  }
+#main-navigation .primary-dropdown #dropdown-light.secondary-dropdown li a:hover { color:#ffcc00 !important;  }

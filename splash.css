@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+page-wrap {
+width:600px;
+display:block;
+background:none;
+margin-left:175px;
+}
+
+.block {
+	display:block;
+}
+
+a{ outline:none;}
+
+
+span {display:none;}
+
+.green {color:#0C0;}
+.blue {color:#4883E0;}
+.red {color:#C41612;}
+.yellow { color:#FC0;}
+.right {float:right;}
+
+.center {text-align:center;}
+
+
+#page-wrap #genset-splash {background:url(images/genbg.png) center top;
+position:relative;
+left:20px;
+width:200px;
+height:350px;
+float:left;
+opacity:0.8;}
+
+#page-wrap #genset-splash:hover {
+	background:url(images/genbghover.gif)center top;
+	position:relative;
+	left:20px;
+	width:200px;
+	height:350px;
+}
+
+#page-wrap #ats-splash {background:url(images/atsbg.png) center top;
+position:relative;
+left:20px;
+width:200px;
+height:350px;
+float:left;
+opacity:0.8;}
+
+#page-wrap #ats-splash:hover {
+	background:url(images/atsbghover.gif)center top;
+	position:relative;
+left:20px;
+width:200px;
+height:350px;}
+
+#page-wrap #power-splash {background:url(images/powerbg.png) center top;
+position:relative;
+left:20px;
+width:200px;
+height:350px;
+float:left;
+opacity:0.8;}
+
+#page-wrap #power-splash:hover {
+	background:url(images/powerbghover.gif)center top;
+	position:relative;
+left:20px;
+width:200px;
+height:350px;}
+
+#page-wrap #heading-gen {
+	background:none;
+position:relative;
+top:225px;
+left:25px;
+width:150px;
+height:39px;
+}
